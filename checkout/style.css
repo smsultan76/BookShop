@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+header {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ header a,header h1 {
+    color: #fff;
+    margin: 0;
+    /* padding-left: 22px; */
+    text-decoration: none;
+}
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+nav button{
+    margin:0 25px;
+    padding: 6px 23px;
+    border-radius: 8px;
+    border: 3px solid white;
+    transition: 0.5s;
+}
+nav button:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid green;
+}
+
+/* checkout php */
+.checkout_container{
+    min-height: 100vh;
+}
+/* product list */ 
+
+#checkout_h2{
+    margin-left: 20%;
+}
+#product{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 19%;
+    margin-right: 30px;
+    padding: 15px;
+    display: flex;
+}
+#product #image img{
+    height: 180px;
+    margin-right: 60px;
+}
+#product #data #price{
+    margin-top: 8px;
+    color: red;
+}
+#product #quantity button{
+    cursor: pointer;
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+    background: transparent;
+    border-radius: 6px;
+    margin: 0;
+    border: none;
+}
+#product #quantity input{
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+}
+#payment{
+    padding: 10px 30px;
+    display: grid;
+    justify-content: end;
+}
+#payment input{
+    border: none;
+    color: red;
+    width: 60px;
+    font-size: large;
+    margin: 5px 10px;
+}
+#payment button{
+    background-color: white;
+    border: 2px solid green;
+    margin: 10px 0 10px 60px;
+    padding: 5px 15px;
+    width: inherit;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#payment button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+
+
+/* payment processing */
+.container{
+    width: 92%;
+    min-height: 100vh;
+    margin: 10px;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: center;
+}
+.container .orderplace h1{
+    text-align: center;
+    width: 500px;
+}
+.container .orderplace .radio-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.container .orderplace .radio-group label{
+    font-size: 19px;
+    margin: 5px 0;
+    padding: 13px;
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+.container .orderplace .radio-group .icon{
+    font-size: 25px;
+    padding-right: 5px;
+}
+.container .orderplace button{
+    /* display: block; */
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 18px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container .orderplace button:hover{
+    background-color: #218838;
+}
+.container .orderplace .radio-group input{
+    height: 30px;
+    border: 2px solid black;
+}
+.container .orderplace .radio-group input[type="radio"]{
+    display: none;
+}
+.container .orderplace .radio-group input[type="radio"]:checked +label{
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+
+@media (max-width: 769px) {
+    #product{
+        margin-left: 8px;
+        margin-right: 8px;
+        height: max-content;
+    }
+    #checkout_h2{
+        margin: 12px;
+    }
+    #product #image img{
+        height: 150px;
+        margin-right: 10px;
+    }
+    #product #data h3{
+        margin: -1px 1px 3px 1px;
+    }
+    .container .orderplace h1{
+        text-align: center;
+        width: auto;
+    }
+    
+}
