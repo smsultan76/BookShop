@@ -1,11 +1,11 @@
 <header>
         <button class="sidebar-icon" onclick="toggleSidebar()">&#9776;</button>
-        <a href="">
+        <a href="index.php">
             <h1> Boi Bazar </h1>
         </a>
         <nav>
             <ul class="header-menu">
-                <li><a href="">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="info/service.php">Services</a></li>
                 <li><a href="seller/seller.php">Become a Seller</a></li>
                 <li><a href="info/about.php">About</a></li>
