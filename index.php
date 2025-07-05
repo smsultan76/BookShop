@@ -16,7 +16,7 @@ session_start();
 <body>
     <?php require 'header.php' ?>
     <aside id="sidebar">
-        <h2>Categories</h2>
+        <h2>Categories</h2> 
         <nav>
             <ul class="sidebar-menu">
                 <li><a href="category/new.php">New Arrival</a></li>
